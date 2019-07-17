@@ -1,0 +1,19 @@
+doctype html
+html
+   head
+      title=title
+   body
+      h1 Website about #{hh}
+      div "It's #{temp} degrees."
+      form(action = "/", method = "POST")
+         div
+            label(for = "city") Enter city:
+            input(id=city, name = "city", type = "text")
+         br
+         button(id = "search", type = "submit") Search
+      div
+        a(href = 'login') Login
+      br
+      div
+        a(href = 'signup') Sign Up
+      br

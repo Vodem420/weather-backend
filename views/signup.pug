@@ -1,0 +1,30 @@
+html
+head
+   title Sign up
+   body
+    h1 Sign up for your personal forecasts!
+    form(action = "/signup", method = "POST")
+      div
+         label(for = "name") Name: 
+         input(id=name, name = "name", type = "text", required placeholder = "abc")
+      br
+      div
+         label(for = "email") Email: 
+         input(id=email, name = "email", type = "text", required placeholder = "abc@mail.com")
+      br
+      div
+         label(for = "password") Password: 
+         input(id=password, name = "password", type = "password", required placeholder = "1234")
+      br
+      div
+         label(for = "confirmpassword") Confirm Password: 
+         input(id=confirmpassword, name = "confirmpassword", type = "password", required placeholder = "1234")
+      br
+      button(type = "submit") Sign Up
+    p=message
+    div
+        a(href = '/login') Login
+    br
+    div
+      a(href = '/') Return to main page
+    br      

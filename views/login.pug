@@ -1,0 +1,22 @@
+html
+head
+   title Login
+   body
+    h1 Log In
+    form(action = "/login", method = "POST")
+      div
+         label(for = "email") Email: 
+         input(id=email, name = "email", type = "text")
+      br
+      div
+         label(for = "password") Password: 
+         input(id=password, name = "password", type = "password")
+      br
+      button(type = "submit") Login
+    p=message
+    div
+        a(href = '/signup') Sign Up
+    br
+    div
+      a(href = '/') Return to main page
+    br
